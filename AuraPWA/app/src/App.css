@@ -1,0 +1,13 @@
+/* src/App.css */
+
+.content {
+  /*
+   * Didática: Este valor DEVE ser o mesmo da largura ('width') da sua sidebar.
+   * Como a .sidebar tem 220px, a margem esquerda do conteúdo principal
+   * também precisa ser de 220px para que um não fique em cima do outro.
+   */
+  margin-left: 220px;
+  
+  padding: 30px;
+  width: 100%;
+}

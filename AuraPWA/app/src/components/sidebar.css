@@ -1,0 +1,92 @@
+/* src/components/Sidebar.css */
+
+/*
+ * =================================================================================
+ * ARQUIVO DE ESTILOS DA SIDEBAR
+ * =================================================================================
+ * Didática: Este arquivo CSS contém todas as regras de estilo que se aplicam
+ * APENAS ao nosso componente Sidebar. Isso é possível porque o importamos
+ * diretamente no arquivo Sidebar.jsx.
+ * =================================================================================
+ */
+
+/* A classe '.sidebar' estiliza o container principal do nosso componente. */
+.sidebar {
+    /* Didática: Reduzimos a largura da barra lateral. */
+    width: 220px; 
+    
+    /* '100vh' significa 100% da 'altura da viewport' (a área visível da janela
+     * do navegador). Isso garante que a barra sempre ocupe a altura total da tela. */
+    height: 100vh;
+    
+    /* Didática: Trocamos o fundo para branco, como solicitado. */
+    background-color: #ffffff; 
+  
+    /* Adicionamos uma borda sutil à direita para separar a barra lateral do 
+     * conteúdo principal, já que o fundo agora é branco. */
+    border-right: 1px solid #e0e0e0;
+    
+    /* 'position: fixed' é a mágica que faz a barra lateral ficar no mesmo lugar
+     * mesmo quando o usuário rola a página principal. Ela é 'fixada' na tela. */
+    position: fixed;
+    
+    /* Junto com 'position: fixed', estas propriedades definem que a barra deve
+     * ficar colada no topo (top: 0) e na esquerda (left: 0) da tela. */
+    top: 0;
+    left: 0;
+  }
+  
+  /* Estiliza a div que contém o logo. */
+  .sidebar-header {
+    /* 'padding' cria um espaçamento interno. Ajuda a centralizar o logo e a 
+     * dar um respiro visual. */
+    padding: 25px;
+    text-align: center; /* Centraliza o logo horizontalmente. */
+  }
+  
+  /* Controla o tamanho da imagem do logo. */
+  .logo {
+    width: 120px;
+  }
+  
+  /* Estiliza a lista de links do menu. */
+  .sidebar-menu {
+    /* Reseta os estilos padrão do navegador para listas. */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estiliza CADA link ('a') dentro de um item de lista ('li') do menu. */
+  .sidebar-menu li a {
+    /* Didática: Como o fundo é branco, o texto precisa ser escuro para ter contraste. */
+    color: #333333; 
+  
+    /* Remove o sublinhado padrão dos links. */
+    text-decoration: none;
+  
+    /* 'display: flex' ativa o Flexbox, um modo de layout moderno e poderoso. */
+    display: flex;
+  
+    /* 'align-items: center' alinha verticalmente o ícone e o texto no centro. */
+    align-items: center;
+  
+    /* Cria um espaçamento interno para os links não ficarem colados nas bordas. */
+    padding: 16px 25px;
+  
+    /* Define uma animação suave para quando as propriedades mudarem (como no hover). */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* A pseudo-classe ':hover' define o estilo do link quando o mouse está sobre ele. */
+  .sidebar-menu li a:hover {
+    /* Didática: Criamos um fundo cinza bem claro para dar um feedback visual ao usuário. */
+    background-color: #f4f4f4;
+  }
+  
+  /* Estiliza o ícone dentro do link. */
+  .sidebar-menu li a span {
+    /* Adiciona um espaço entre o ícone e o texto. */
+    margin-right: 15px; 
+    font-size: 1.1rem; /* Aumenta um pouco o tamanho do ícone. */
+  }
